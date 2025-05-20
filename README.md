@@ -9,11 +9,11 @@ This repository includes two distinct methods for implementing Sequence-to-Seque
 ```
 DA6401_Assignment3/
 ├── With_attention/
-│   ├── dla3-attention.ipynb     # Jupyter notebook with attention implementation
+│   ├── dla3-attention.ipynb,.py     # Jupyter notebook with attention implementation, python file of it
 │   ├── prediction_attention.csv  # Prediction results from attention model
 │   └── heatmap,connection grid             # Visualization images (2 files)
 ├── Without_attention/
-│   ├── dla3-without-attention.ipynb       # Jupyter notebook with vanilla implementation
+│   ├── dla3-without-attention.ipynb,.py       # Jupyter notebook with vanilla implementation,python file of it
 │   ├── prediction_vanilla.csv    # Prediction results from vanilla model
 │   └── sample                    # Visualization image (1 file)
 └── README.md                     # Main README file
@@ -27,13 +27,6 @@ DA6401_Assignment3/
 
  2. **Attention-based Seq2Seq** is improved architecture overcomes the drawbacks of compressing all information into a fixed-length vector by enabling the decoder to concentrate on distinct segments of the input sequence at each decoding step.
 
-
-## Key Features
-
-- **Multiple RNN Cell Types**: Support for RNN, GRU, and LSTM cells
-- **Beam Search Decoding**: Enhanced decoding strategy for improved output quality
-- **Attention Mechanism**: Visual attention to focus on relevant input characters
-- **Visualization**: Attention weight visualization to understand model behavior
 
 ## Data
 
@@ -59,11 +52,11 @@ This project uses the Dakshina dataset for Marathi-English transliteration. The 
    pip install torch pandas numpy matplotlib tqdm
    ```
 
-3. Update the file paths in both notebooks to point to your local dataset location.
+3. Update the dataset file paths in both notebooks to point to your local dataset location.
 
 4. Run the Jupyter notebooks:
-   - For vanilla model: `Without_attention/vanilla_model.ipynb`
-   - For attention model: `With_attention/attention_model.ipynb`
+   - For vanilla model: `Without_attention/dla3-without-attention.ipynb`
+   - For attention model: `With_attention/dla3-attention.ipynb`
 
 ## Running the Models
 
@@ -81,11 +74,5 @@ Both notebooks are self-contained with all necessary code for training and evalu
 
 The attention-based model achieved approximately 60% accuracy on the test set, outperforming the vanilla Seq2Seq model which achieved approximately 55% accuracy. This demonstrates the benefit of the attention mechanism for the transliteration task, particularly for longer sequences.
 
-## Visualizations
-
-The repository includes visualization files that show:
-- Character-level attention weights in the attention model
-- Training and validation loss curves
-- Sample predictions compared to ground truth
 
 Wandb Report Link: https://api.wandb.ai/links/da24m014-iit-madras/lzf9odnx
