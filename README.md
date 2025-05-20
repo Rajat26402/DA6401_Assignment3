@@ -37,7 +37,7 @@ DA6401_Assignment3/
 
 ## Data
 
-This project uses the Dakshina dataset for Hindi-English transliteration. The dataset can be downloaded from the [official source](https://github.com/google-research-datasets/dakshina).
+This project uses the Dakshina dataset for Marathi-English transliteration. The dataset can be downloaded from the [official source](https://github.com/google-research-datasets/dakshina).
 
 ## Comparison of Models
 
@@ -87,3 +87,5 @@ The repository includes visualization files that show:
 - Character-level attention weights in the attention model
 - Training and validation loss curves
 - Sample predictions compared to ground truth
+
+Wandb Report Link: https://api.wandb.ai/links/da24m014-iit-madras/lzf9odnx
